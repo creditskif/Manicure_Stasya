@@ -54,9 +54,10 @@ hr {
     min-height: 820px;
     position: relative;
 
-    background: url("../images/intro.jpg") center no-repeat;
+    background:  url("../images/intro.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
+    back
 }
 
 .intro__inner {
@@ -109,7 +110,7 @@ hr {
 .header.fixed {
     padding: 10px 0;
 
-    background-color: #eb8b8d;
+    background-color: #e0b2a6;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 
     position: fixed;
@@ -161,7 +162,7 @@ hr {
     width: 100%;
     height: 3px;
 
-    background-color: #fce38a;
+    background-color: #000;
     opacity: 0;
 
     position: absolute;
@@ -173,7 +174,7 @@ hr {
 }
 
 .nav__link:hover {
-    color: #fce38a;
+    color: #000;
 }
 
 .nav__link:hover:after,
@@ -182,7 +183,7 @@ hr {
 }
 
 .nav__link.active {
-    color: #fce38a;
+    color: #fff;
 }
 
 
@@ -338,6 +339,7 @@ hr {
     font-weight: 700;
     color: #333;
     text-transform: uppercase;
+    display: none;
 }
 
 .section__title:after {
@@ -353,6 +355,7 @@ hr {
 .section__text {
     font-size: 15px;
     color: #999;
+    display: none;
 }
 
 
