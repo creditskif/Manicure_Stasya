@@ -1537,7 +1537,7 @@ hr {
 @media (max-width: 575px) {
 
     .header__logo{
-        font-size: 19px;    
+        font-size: 18px;    
     }
     
     .intro{
@@ -1646,6 +1646,10 @@ hr {
 
     .clients__text:before {
         margin: 5px auto;
+    }
+    
+    .clients__name {
+        font-size: 15px;
     }
 
 
