@@ -549,7 +549,6 @@ hr {
 /* Footer */
 .footer {
     padding-top: 65px;
-
     background-color: #f8f8f8;
 }
 
@@ -624,15 +623,6 @@ hr {
     text-decoration: underline;
 }
 
-
-
-
-
-/* Subscribe */
-
-
-
-
 /* Copyright */
 .copyright {
     padding: 20px 0;
@@ -647,7 +637,119 @@ hr {
 .copyright span {
     color: #f38181;
 }
+/*Edit*/
+/*----------------------------------------------*/
+.margin{
+    margin: 45px 30px 0px;
+    opacity: 0;
+}
 
+.online-services.active .category{
+    border-radius: 25px;
+}
+
+.online-services.active .services{
+    display: block;
+}
+
+.category{
+    margin: 15px 30px 0px;
+    padding: 10px;
+    background-image: linear-gradient(to top,#f993b2, #fbd3db);
+    text-align: center;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.count{
+    height: 100%;
+    width: 100%;
+    padding: 14px 35px 14px 15px;
+    position: relative;
+    font-size: 17px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #FFF;   
+}
+
+.services{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 30px;
+    border-bottom: 1px solid #EEE;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
+    border-radius: 0px 0px 25px 25px;
+}
+
+.services.active{
+    display: block;
+}
+
+.service__item{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #EEE;
+}
+
+.data{
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.name{    
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.1;
+    
+}
+.info{
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    opacity: 0.5;
+}
+
+.btn-call{
+    -webkit-mask: url(/assets/images/5ca619e7796f01413d8b456c.svg) no-repeat center;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #b3b3b3;
+}
+
+.btn-call.active{
+	-webkit-mask: url(/assets/images/true.svg) no-repeat center;
+	mask: url(/assets/images/true.svg) no-repeat center;
+	background-color: #e6497b;
+}
+
+.btn__1{
+    display: none;
+    vertical-align: top;
+    padding: 10px 0;
+    margin: 30px;
+    border: 2px solid #EEE;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 /20%);
+    border-radius: 50px;
+    background-image: linear-gradient(to top,#f993b2, #fbd3db);    
+
+}
+
+.btn__name{
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+}
+
+.btn__1.active{
+    display: block;
+}
 
 
 
