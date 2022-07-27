@@ -21,11 +21,12 @@
         </div>
     </div>
 </header>
-    <div class="online-services">
+    <div class="margin">0</div>
+    <div class="online-services" id="service_off">
             <div class="category">
                 <div class="count">Выберите услугу</div>
             </div>
-            <div class="services">
+            <div class="services active">
                 <div class="service__item">
                     <div class="data">
                         <div class="name">Комплекс Маникюр "Все включено + Дизайн"</div>
@@ -34,7 +35,7 @@
                     </div>                       
                     </div>
                      
-                    <div class="btn-call">
+                    <div class="btn-call" data-collapse="#btn_call_1">
                         <span class="abgrecolor">&nbsp;</span>
                     </div>
                 </div>
@@ -45,29 +46,29 @@
                             <span>от 1 400 ₽</span>
                         </div>
                     </div>   
-                    <div class="btn-call">
+                    <div class="btn-call" data-collapse="#btn_call_2">
                         <span class="abgrecolor">&nbsp;</span>
                     </div>
                 </div>
-                <div class="service__item">
+                <div class="service__item" id="service_item">
                     <div class="data">
                         <div class="name">Коррекция</div>
                         <div class="info">
                             <span>от 1 000 ₽</span>
                         </div>
                     </div>   
-                    <div class="btn-call">
+                    <div class="btn-call" data-collapse="#btn_call_3">
                         <span class="abgrecolor">&nbsp;</span>
                     </div>
                 </div>
-                <div class="service__item">
+                <div class="service__item id="service_item"">
                     <div class="data">
                             <div class="name">Аппаратный Маникюр</div>
                             <div class="info">
                                 <span>450 ₽</span> 
                             </div>
                         </div>
-                    <div class="btn-call">
+                    <div class="btn-call" data-collapse="#btn_call_4">
                         <span class="abgrecolor">&nbsp;</span>
                     </div>
                 </div>
@@ -78,7 +79,7 @@
                                 <span>50 ₽</span> 
                             </div>
                     </div>    
-                    <div class="btn-call">
+                    <div class="btn-call" data-collapse="#btn_call_5">
                         <span class="abgrecolor">&nbsp;</span>
                     </div>
                 </div>
@@ -90,7 +91,7 @@
                             <span>до 150 ₽</span> 
                         </div>
                     </div>    
-                    <div class="btn-call">
+                    <div class="btn-call" data-collapse="#btn_call_6">
                         <span class="abgrecolor">&nbsp;</span>
                     </div>
                  </div>
@@ -102,11 +103,106 @@
                         </div>
                         </div>
                        
-                    <div class="btn-call">
+                    <div class="btn-call" data-collapse="#btn_call_2">
                         <span class="abgrecolor">&nbsp;</span>
                     </div>
                 </div> 
             </div>
         </div>
+    
+    <div class="online-services"  id="service_on">
+            <div class="category">
+                <div class="count">Выберите дату и время</div>
+            </div>
+            <div class="services">
+                <div class="service__item">
+                    <div class="data">
+                        <div class="name">Комплекс Маникюр "Все включено + Дизайн"</div>
+                        <div class="info">
+                            <span> 1 000 ₽</span> 
+                    </div>                       
+                    </div>
+                     
+                    <div class="btn-call" data-collapse="#btn_call_1">
+                        <span class="abgrecolor">&nbsp;</span>
+                    </div>
+                </div>
+                <div class="service__item">
+                    <div class="data">
+                        <div class="name">Наращивание Ногтей "Все включено + Дизайн"</div>
+                        <div class="info">
+                            <span>от 1 400 ₽</span>
+                        </div>
+                    </div>   
+                    <div class="btn-call" data-collapse="#btn_call_2">
+                        <span class="abgrecolor">&nbsp;</span>
+                    </div>
+                </div>
+                <div class="service__item" id="service_item">
+                    <div class="data">
+                        <div class="name">Коррекция</div>
+                        <div class="info">
+                            <span>от 1 000 ₽</span>
+                        </div>
+                    </div>   
+                    <div class="btn-call" data-collapse="#btn_call_3">
+                        <span class="abgrecolor">&nbsp;</span>
+                    </div>
+                </div>
+                <div class="service__item id="service_item"">
+                    <div class="data">
+                            <div class="name">Аппаратный Маникюр</div>
+                            <div class="info">
+                                <span>450 ₽</span> 
+                            </div>
+                        </div>
+                    <div class="btn-call" data-collapse="#btn_call_4">
+                        <span class="abgrecolor">&nbsp;</span>
+                    </div>
+                </div>
+                <div class="service__item">
+                    <div class="data">
+                            <div class="name">Донаращивание (Ремонт) 1 Ногтя</div>
+                            <div class="info">
+                                <span>50 ₽</span> 
+                            </div>
+                    </div>    
+                    <div class="btn-call" data-collapse="#btn_call_5">
+                        <span class="abgrecolor">&nbsp;</span>
+                    </div>
+                </div>
+                <div class="service__item">
+                    <div class="data">
+                        <div class="name">Снятие Чужой Работы</div>
+                        <div class="info">
+                            <span>от 50 ₽</span> 
+                            <span>до 150 ₽</span> 
+                        </div>
+                    </div>    
+                    <div class="btn-call" data-collapse="#btn_call_6">
+                        <span class="abgrecolor">&nbsp;</span>
+                    </div>
+                 </div>
+                 <div class="service__item">
+                    <div class="data">
+                        <div class="name">Снятие Моей Работы Без Дальнейшего Покртытия</div>
+                        <div class="info">
+                            <span>250 ₽</span> 
+                        </div>
+                        </div>
+                       
+                    <div class="btn-call" data-collapse="#btn_call_2">
+                        <span class="abgrecolor">&nbsp;</span>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    
+    <div class="btn__1" data-cop="#btn_cal" id="btn_name">
+        <div class="btn__name">Продолжить</div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/edit_app.js"></script>
     </body>  
 </html>
