@@ -712,7 +712,7 @@ hr {
 }
 
 .btn-call{
-    -webkit-mask: url(/assets/images/5ca619e7796f01413d8b456c.svg) no-repeat center;
+    -webkit-mask: url(/static/images/5ca619e7796f01413d8b456c.svg) no-repeat center;
     display: inline-block;
     width: 22px;
     height: 22px;
@@ -723,8 +723,8 @@ hr {
 }
 
 .btn-call.active{
-	-webkit-mask: url(/assets/images/true.svg) no-repeat center;
-	mask: url(/assets/images/true.svg) no-repeat center;
+	-webkit-mask: url(/static/images/true.svg) no-repeat center;
+	mask: url(/static/images/true.svg) no-repeat center;
 	background-color: #e6497b;
 }
 

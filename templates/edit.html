@@ -1,0 +1,48 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<body>
+<header class="header fixed">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">Manicure_Stasya_6.22_vlg</div>
+        </div>
+    </div>
+</header>
+<div class="margin">0</div>
+<div class="online-services" id="service_off">
+    <div class="category">
+        <div class="count">Выберите услугу</div>
+    </div>
+    <div class="services active">
+        {% for obj in price %}
+          <div class="service__item">
+            <div class="data">
+                <div class="name">{{ obj.name }}</div>
+                <div class="info">
+                    <span>{{ obj.price }}</span>
+                </div>
+            </div>
+
+            <div class="btn-call" data-collapse="#btn_call_1">
+                <span class="abgrecolor">&nbsp;</span>
+            </div>
+        </div>
+        {% endfor %}
+</div>
+</div>
+
+<div class="online-services" id="service_on">
+    <div class="category">
+        <div class="count">Выберите дату и время</div>
+    </div>
+
+</div>
+
+<div class="btn__1" data-cop="#btn_cal" id="btn_name">
+    <div class="btn__name">Продолжить</div>
+</div>
+
+</body>
+
+{% endblock %}

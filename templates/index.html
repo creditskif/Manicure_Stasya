@@ -1,22 +1,23 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{% static  'css/style.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
-    <link rel=”icon” href=”/favicon.ico” type=”image/x-icon”>
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
     <title>Manicure_Stasya_6.22_vlg</title>
 </head>
 <body>
+{% block content %}
 
-
-<header class="header" id="header">
+    <header class="header" id="header">
     <div class="container">
         <div class="header__inner">
             <div class="header__logo" data-scroll="#intro">Manicure_Stasya_6.22_vlg</div>
@@ -46,7 +47,7 @@
                 <h2 class="intro__suptitle">Manicure_stasya_6.22_vlg</h2>
                 <h1 class="intro__title">Добро пожаловать</h1>
 
-                <a class="btn" href="#">Онлайн запись</a>
+                <a class="btn" href="{% url 'register' %}">Онлайн запись</a>
             </div>
         </div>
 
@@ -65,22 +66,22 @@
 
             <div class="description">
                 <div class="description__item">
-                    <img class="description__img" src="assets/images/About.jpg" alt="">
+                    <img class="description__img" src="{% static 'images/About.jpg' %}" alt="">
                 </div>
 
                 <div class="description__item">
                     <div class="description__content">
                          <p>Привет 👋, я Настя.<br>
                          💅Сделаю ваши ручки красивыми.<br>
-                         💎Я тот мастер, который НАРАЩИВАЕТ ✌️<br> 
+                         💎Я тот мастер, который НАРАЩИВАЕТ ✌️<br>
                          🔬Стерильно<br>
                          🦄Работаю с 2016 года<br>
                          🏡 Октябрьский р-н Х.Антонов.</p>
-                         <img class="description__img" src="assets/images/About2.jpg" alt="">
+                         <img class="description__img" src="{% static 'images/about2.jpg' %}" alt="">
                     </div>
-                    
+
                 </div><!-- /.description__item -->
-                
+
             </div><!-- /.description -->
 
         </div>
@@ -98,7 +99,7 @@
 
             <div class="prices">
                 <div class="prices__item">
-                    <img class="prices__photo" src="assets/images/price/1.jpg" alt="">
+                    <img class="prices__photo" src="{% static 'images/price/1.jpg' %}" alt="">
                     <div class="prices__content">
                         <div class="prices__name">Комплекс маникюр "Все включено + Дизайн"</div>
                         <div class="prices__prof">Снятие моего покрытия, маниюкр, выравнивание ногтевой пластины, укрепление гелем, дизайн</div>
@@ -107,16 +108,16 @@
                 </div>
 
                 <div class="prices__item">
-                    <img class="prices__photo" src="assets/images/price/2.jpg" alt="">
+                    <img class="prices__photo" src="{% static 'images/price/2.jpg' %}" alt="">
                     <div class="prices__content">
                         <div class="prices__name">Наращивание ногтей "Всё включено + дизайн"</div>
                         <div class="prices__prof">После Длинны "М", (S, M, L, LL) &ensp;+ 100 р</div>
                         <div class="prices__text">от 1 400 ₽</div>
                     </div>
                 </div>
-                
+
                 <div class="prices__item">
-                    <img class="prices__photo" src="assets/images/price/3.jpg" alt="">
+                    <img class="prices__photo" src="{% static 'images/price/3.jpg' %}" alt="">
                     <div class="prices__content">
                         <div class="prices__name">Коррекция</div>
                         <div class="prices__prof"></div>
@@ -125,7 +126,7 @@
                 </div>
 
                 <div class="prices__item">
-                    <img class="prices__photo" src="assets/images/price/4.jpg" alt="">
+                    <img class="prices__photo" src="{% static 'images/price/4.jpg' %}" alt="">
                     <div class="prices__content">
                         <div class="prices__name">Аппаратный маникюр </div>
                         <div class="prices__prof"></div>
@@ -134,7 +135,7 @@
                 </div>
 
                 <div class="prices__item">
-                    <img class="prices__photo" src="assets/images/price/5.jpg" alt="">
+                    <img class="prices__photo" src="{% static 'images/price/5.jpg' %}" alt="">
                     <div class="prices__content">
                         <div class="prices__name">Донаращивание (ремонт) 1 ногтя</div>
                         <div class="prices__prof"></div>
@@ -142,7 +143,7 @@
                     </div>
                 </div>
                 <div class="prices__item">
-                    <img class="prices__photo" src="assets/images/price/6.jpg" alt="">
+                    <img class="prices__photo" src="{% static 'images/price/6.jpg' %}" alt="">
                     <div class="prices__content">
                         <div class="prices__name">Снятие чужой работы</div>
                         <div class="prices__prof"></div>
@@ -150,7 +151,7 @@
                     </div>
                 </div>
                 <div class="prices__item">
-                    <img class="prices__photo" src="assets/images/price/7.jpg" alt="">
+                    <img class="prices__photo" src="{% static 'images/price/7.jpg' %}" alt="">
                     <div class="prices__content">
                         <div class="prices__name">Снятие моей работы без дальнейшего покрытия</div>
                         <div class="prices__prof"></div>
@@ -158,7 +159,7 @@
                     </div>
                 </div>
                 <div class="prices__item">
-                    <img class="prices__photo" src="assets/images/price/8.jpg" alt="">
+                    <img class="prices__photo" src="{% static 'images/price/8.jpg' %}" alt="">
                     <div class="prices__content">
                         <div class="prices__name">с новых клиентов предоплата</div>
                         <div class="prices__prof"></div>
@@ -185,37 +186,37 @@
         <div class="works">
             <div class="works__col">
                 <div class="works__item">
-                    <img class="works__image" src="assets/images/works/1.jpg" alt="">
+                    <img class="works__image" src="{% static 'images/works/1.jpg' %}" alt="">
                 </div>
                 <div class="works__item">
-                    <img class="works__image" src="assets/images/works/2.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="works__col">
-                <div class="works__item">
-                    <img class="works__image" src="assets/images/works/3.jpg" alt="">
-                </div>
-                <div class="works__item">
-                    <img class="works__image" src="assets/images/works/4.jpg" alt="">
+                    <img class="works__image" src="{% static 'images/works/2.jpg' %}" alt="">
                 </div>
             </div>
 
             <div class="works__col">
                 <div class="works__item">
-                    <img class="works__image" src="assets/images/works/5.jpg" alt="">
+                    <img class="works__image" src="{% static 'images/works/3.jpg' %}" alt="">
                 </div>
                 <div class="works__item">
-                    <img class="works__image" src="assets/images/works/6.jpg" alt="">
+                    <img class="works__image" src="{% static 'images/works/4.jpg' %}" alt="">
                 </div>
             </div>
 
             <div class="works__col">
                 <div class="works__item">
-                    <img class="works__image" src="assets/images/works/7.jpg" alt="">
+                    <img class="works__image" src="{% static 'images/works/5.jpg' %}" alt="">
                 </div>
                 <div class="works__item">
-                    <img class="works__image" src="assets/images/works/8.jpg" alt="">
+                    <img class="works__image" src="{% static 'images/works/6.jpg' %}" alt="">
+                </div>
+            </div>
+
+            <div class="works__col">
+                <div class="works__item">
+                    <img class="works__image" src="{% static 'images/works/7.jpg' %}" alt="">
+                </div>
+                <div class="works__item">
+                    <img class="works__image" src="{% static 'images/works/8.jpg' %}" alt="">
                 </div>
             </div>
         </div><!-- /.works -->
@@ -236,7 +237,7 @@
                 <div class="experience__item">
                     <div class="experience__inner">
                         <div class="experience__img">
-                            <img src="assets/images/experience/1.jpg" alt="">
+                            <img src="{% static 'images/experience/1.jpg' %}" alt="">
                         </div>
                     </div>
                 </div>
@@ -244,7 +245,7 @@
                 <div class="experience__item">
                     <div class="experience__inner">
                         <div class="experience__img">
-                            <img src="assets/images/experience/2.jpg" alt="">
+                            <img src="{% static 'images/experience/2.jpg' %}" alt="">
                         </div>
                     </div>
                 </div>
@@ -252,42 +253,42 @@
                 <div class="experience__item">
                     <div class="experience__inner">
                         <div class="experience__img">
-                            <img src="assets/images/experience/3.jpg" alt="">
+                            <img src="{% static 'images/experience/3.jpg' %}" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="experience__item">
                     <div class="experience__inner">
                         <div class="experience__img">
-                            <img src="assets/images/experience/4.jpg" alt="">
+                            <img src="{% static 'images/experience/4.jpg' %}" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="experience__item">
                     <div class="experience__inner">
                         <div class="experience__img">
-                            <img src="assets/images/experience/5.jpg" alt="">
+                            <img src="{% static 'images/experience/5.jpg' %}" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="experience__item">
                     <div class="experience__inner">
                         <div class="experience__img">
-                            <img src="assets/images/experience/6.jpg" alt="">
+                            <img src="{% static 'images/experience/6.jpg' %}" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="experience__item">
                     <div class="experience__inner">
                         <div class="experience__img">
-                            <img src="assets/images/experience/7.jpg" alt="">
+                            <img src="{% static 'images/experience/7.jpg' %}" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="experience__item">
                     <div class="experience__inner">
                         <div class="experience__img">
-                            <img src="assets/images/experience/8.jpg" alt="">
+                            <img src="{% static 'images/experience/8.jpg' %}" alt="">
                         </div>
                     </div>
                 </div>
@@ -310,17 +311,17 @@
 
                 <div class="footer__col ">
                     <div class="contacts">
-                    
+
                         <div class="contacts__item">
-                            <img class="contacts__img" src="assets/images/messengers/Instagram.png" alt="">
-                            
+                            <img class="contacts__img" src="{% static 'images/messengers/Instagram.png' %}" alt="">
+
                             <div class="contacts__content">
                                 <a class="contacts__title" href="https://www.instagram.com/manicure_stasya_6.22_vlg/">Instagram</a>
                             </div>
                         </div>
                         <div class="contacts__item">
-                            <img class="contacts__img" src="assets/images/messengers/vkontakte.png" alt="">
-                            
+                            <img class="contacts__img" src="{% static 'images/messengers/vkontakte.png' %}" alt="">
+
                             <div class="contacts__content">
                                 <a class="contacts__title" href="https://vk.com/public211576625">vkontakte</a>
                             </div>
@@ -330,18 +331,18 @@
                 </div>
                      <div class="footer__col ">
                     <div class="contacts">
-                    
+
 
                         <div class="contacts__item">
-                            <img class="contacts__img" src="assets/images/messengers/Whatsapp.png" alt="">
-                            
+                            <img class="contacts__img" src="{% static 'images/messengers/Whatsapp.png' %}" alt="">
+
                             <div class="contacts__content">
                                 <a class="contacts__title" href="https://wa.me/79020909703">WhatsApp</a>
                             </div>
                         </div>
                         <div class="contacts__item">
-                            <img class="contacts__img" src="assets/images/messengers/Telegram.png" alt="">
-                            
+                            <img class="contacts__img" src="{% static 'images/messengers/Telegram.png' %}" alt="">
+
                             <div class="contacts__content">
                                 <a class="contacts__title" href="https://telegram.me/manicure_stasya_622_vlg">Telegram</a>
                             </div>
@@ -359,11 +360,15 @@
 
 </div><!-- /.page -->
 
+{% endblock %}
+
+
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="assets/js/app.js"></script>
+<script src="{% static 'js/app.js' %}"></script>
 
 
 </body>
