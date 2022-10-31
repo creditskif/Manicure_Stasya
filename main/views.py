@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Price
+from .models import Price, Plan, Recording
 
 
 def index(request):
@@ -7,4 +7,6 @@ def index(request):
 
 def register(request):
     price = Price.objects.all()
-    return render(request, 'edit.html', {'price': price})
+    plans = Plan.objects.all()
+    record = Recording.objects.all()
+    return render(request, 'edit.html', {'price': price, 'plans': plans, 'record': record})

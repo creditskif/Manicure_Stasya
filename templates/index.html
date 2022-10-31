@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static  'css/style.css' %}">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,347 +20,352 @@
 {% block content %}
 
     <header class="header" id="header">
-    <div class="container">
-        <div class="header__inner">
-            <div class="header__logo" data-scroll="#intro">Manicure_Stasya_6.22_vlg</div>
-
-            <nav class="nav" id="nav">
-                 <!--<a class="nav__link" href="#" data-scroll="#about">О себе</a>-->
-                <a class="nav__link" href="#" data-scroll="#intro">Запись</a>
-                <a class="nav__link" href="#" data-scroll="#price">Прайс</a>
-                <a class="nav__link" href="#" data-scroll="#works">Работы</a>
-                <a class="nav__link" href="#" data-scroll="#contacts">Контакты</a>
-            </nav>
-
-            <button class="nav-toggle" id="nav_toggle" type="button">
-                <span class="nav-toggle__item">Меню</span>
-            </button>
-        </div>
-    </div>
-</header>
-
-
-<div class="page">
-
-    <!-- Intro -->
-    <div class="intro" id="intro">
         <div class="container">
-            <div class="intro__inner">
-                <h2 class="intro__suptitle">Manicure_stasya_6.22_vlg</h2>
-                <h1 class="intro__title">Добро пожаловать</h1>
+            <div class="header__inner">
+                <div class="header__logo" data-scroll="#intro">Manicure_Stasya_6.22_vlg</div>
 
-                <a class="btn" href="{% url 'register' %}">Онлайн запись</a>
+                <nav class="nav" id="nav">
+                    <!--<a class="nav__link" href="#" data-scroll="#about">О себе</a>-->
+                    <a class="nav__link" href="#" data-scroll="#intro">Запись</a>
+                    <a class="nav__link" href="#" data-scroll="#price">Прайс</a>
+                    <a class="nav__link" href="#" data-scroll="#works">Работы</a>
+                    <a class="nav__link" href="#" data-scroll="#contacts">Контакты</a>
+                </nav>
+
+                <button class="nav-toggle" id="nav_toggle" type="button">
+                    <span class="nav-toggle__item">Меню</span>
+                </button>
             </div>
         </div>
+    </header>
 
 
-    </div><!-- /.intro -->
+    <div class="page">
 
-      <!-- Wedo -->
-    <section class="section section--about" id="about">
-        <div class="container">
+        <!-- Intro -->
+        <div class="intro" id="intro">
+            <div class="container">
+                <div class="intro__inner">
+                    <h2 class="intro__suptitle">Manicure_stasya_6.22_vlg</h2>
+                    <h1 class="intro__title">Добро пожаловать</h1>
 
-            <div class="section__header">
-                <h3 class="section__suptitle">О СЕБЕ</h3>
-                <h2 class="section__title"></h2>
-                <div class="section__text"></div>
-            </div>
-
-            <div class="description">
-                <div class="description__item">
-                    <img class="description__img" src="{% static 'images/About.jpg' %}" alt="">
-                </div>
-
-                <div class="description__item">
-                    <div class="description__content">
-                         <p>Привет 👋, я Настя.<br>
-                         💅Сделаю ваши ручки красивыми.<br>
-                         💎Я тот мастер, который НАРАЩИВАЕТ ✌️<br>
-                         🔬Стерильно<br>
-                         🦄Работаю с 2016 года<br>
-                         🏡 Октябрьский р-н Х.Антонов.</p>
-                         <img class="description__img" src="{% static 'images/about2.jpg' %}" alt="">
-                    </div>
-
-                </div><!-- /.description__item -->
-
-            </div><!-- /.description -->
-
-        </div>
-    </section>
-
-
-    <!-- Prices -->
-    <section class="section  section--prices" id = "price">
-        <div class="container">
-
-            <div class="section__header">
-                <h3 class="section__suptitle">ПРАЙС ЛИСТ</h3>
-                <h2 class="section__title"></h2>
-            </div>
-
-            <div class="prices">
-                <div class="prices__item">
-                    <img class="prices__photo" src="{% static 'images/price/1.jpg' %}" alt="">
-                    <div class="prices__content">
-                        <div class="prices__name">Комплекс маникюр "Все включено + Дизайн"</div>
-                        <div class="prices__prof">Снятие моего покрытия, маниюкр, выравнивание ногтевой пластины, укрепление гелем, дизайн</div>
-                        <div class="prices__text">1 000 ₽</div>
-                    </div>
-                </div>
-
-                <div class="prices__item">
-                    <img class="prices__photo" src="{% static 'images/price/2.jpg' %}" alt="">
-                    <div class="prices__content">
-                        <div class="prices__name">Наращивание ногтей "Всё включено + дизайн"</div>
-                        <div class="prices__prof">После Длинны "М", (S, M, L, LL) &ensp;+ 100 р</div>
-                        <div class="prices__text">от 1 400 ₽</div>
-                    </div>
-                </div>
-
-                <div class="prices__item">
-                    <img class="prices__photo" src="{% static 'images/price/3.jpg' %}" alt="">
-                    <div class="prices__content">
-                        <div class="prices__name">Коррекция</div>
-                        <div class="prices__prof"></div>
-                        <div class="prices__text">1 000 ₽</div>
-                    </div>
-                </div>
-
-                <div class="prices__item">
-                    <img class="prices__photo" src="{% static 'images/price/4.jpg' %}" alt="">
-                    <div class="prices__content">
-                        <div class="prices__name">Аппаратный маникюр </div>
-                        <div class="prices__prof"></div>
-                        <div class="prices__text">450 ₽</div>
-                    </div>
-                </div>
-
-                <div class="prices__item">
-                    <img class="prices__photo" src="{% static 'images/price/5.jpg' %}" alt="">
-                    <div class="prices__content">
-                        <div class="prices__name">Донаращивание (ремонт) 1 ногтя</div>
-                        <div class="prices__prof"></div>
-                        <div class="prices__text">50 ₽</div>
-                    </div>
-                </div>
-                <div class="prices__item">
-                    <img class="prices__photo" src="{% static 'images/price/6.jpg' %}" alt="">
-                    <div class="prices__content">
-                        <div class="prices__name">Снятие чужой работы</div>
-                        <div class="prices__prof"></div>
-                        <div class="prices__text">от 50 ₽ до 150 ₽</div>
-                    </div>
-                </div>
-                <div class="prices__item">
-                    <img class="prices__photo" src="{% static 'images/price/7.jpg' %}" alt="">
-                    <div class="prices__content">
-                        <div class="prices__name">Снятие моей работы без дальнейшего покрытия</div>
-                        <div class="prices__prof"></div>
-                        <div class="prices__text">250 ₽</div>
-                    </div>
-                </div>
-                <div class="prices__item">
-                    <img class="prices__photo" src="{% static 'images/price/8.jpg' %}" alt="">
-                    <div class="prices__content">
-                        <div class="prices__name">с новых клиентов предоплата</div>
-                        <div class="prices__prof"></div>
-                        <div class="prices__text">50% от суммы</div>
-                    </div>
-                </div>
-
-            </div><!-- /.prices -->
-
-        </div><!-- /.container -->
-    </section>
-
-
-    <!-- Works -->
-    <section class="section section--gray" id="works">
-        <div class="container">
-            <div class="section__header">
-                <h3 class="section__suptitle">ГАЛЕРЕЯ</h3>
-                <h2 class="section__title"></h2>
-                <div class="section__text"></div>
-            </div>
-        </div>
-
-        <div class="works">
-            <div class="works__col">
-                <div class="works__item">
-                    <img class="works__image" src="{% static 'images/works/1.jpg' %}" alt="">
-                </div>
-                <div class="works__item">
-                    <img class="works__image" src="{% static 'images/works/2.jpg' %}" alt="">
+                    <a class="btn" href="{% url 'register' %}">Онлайн запись</a>
                 </div>
             </div>
 
-            <div class="works__col">
-                <div class="works__item">
-                    <img class="works__image" src="{% static 'images/works/3.jpg' %}" alt="">
+
+        </div><!-- /.intro -->
+
+        <!-- Wedo -->
+        <section class="section section--about" id="about">
+            <div class="container">
+
+                <div class="section__header">
+                    <h3 class="section__suptitle">О СЕБЕ</h3>
+                    <h2 class="section__title"></h2>
+                    <div class="section__text"></div>
                 </div>
-                <div class="works__item">
-                    <img class="works__image" src="{% static 'images/works/4.jpg' %}" alt="">
-                </div>
+
+                <div class="description">
+                    <div class="description__item">
+                        <img class="description__img" src="{% static 'images/About.jpg' %}" alt="">
+                    </div>
+
+                    <div class="description__item">
+                        <div class="description__content">
+                            <p>Привет 👋, я Настя.<br>
+                                💅Сделаю ваши ручки красивыми.<br>
+                                💎Я тот мастер, который НАРАЩИВАЕТ ✌️<br>
+                                🔬Стерильно<br>
+                                🦄Работаю с 2016 года<br>
+                                🏡 Октябрьский р-н Х.Антонов.</p>
+                            <img class="description__img" src="{% static 'images/about2.jpg' %}" alt="">
+                        </div>
+
+                    </div><!-- /.description__item -->
+
+                </div><!-- /.description -->
+
             </div>
+        </section>
 
-            <div class="works__col">
-                <div class="works__item">
-                    <img class="works__image" src="{% static 'images/works/5.jpg' %}" alt="">
+
+        <!-- Prices -->
+        <section class="section  section--prices" id="price">
+            <div class="container">
+
+                <div class="section__header">
+                    <h3 class="section__suptitle">ПРАЙС ЛИСТ</h3>
+                    <h2 class="section__title"></h2>
                 </div>
-                <div class="works__item">
-                    <img class="works__image" src="{% static 'images/works/6.jpg' %}" alt="">
-                </div>
-            </div>
 
-            <div class="works__col">
-                <div class="works__item">
-                    <img class="works__image" src="{% static 'images/works/7.jpg' %}" alt="">
-                </div>
-                <div class="works__item">
-                    <img class="works__image" src="{% static 'images/works/8.jpg' %}" alt="">
-                </div>
-            </div>
-        </div><!-- /.works -->
-    </section>
-
-
- <!-- About -->
-    <section class="section section" id="experience">
-        <div class="container">
-
-            <div class="section__header">
-                <h3 class="section__suptitle">МОЙ ОПЫТ ДЛИННОЙ В 6 ЛЕТ</h3>
-                <h2 class="section__title"></h2>
-                <div class="section__text"></div>
-            </div>
-
-            <div class="experience">
-                <div class="experience__item">
-                    <div class="experience__inner">
-                        <div class="experience__img">
-                            <img src="{% static 'images/experience/1.jpg' %}" alt="">
+                <div class="prices">
+                    <div class="prices__item">
+                        <img class="prices__photo" src="{% static 'images/price/1.jpg' %}" alt="">
+                        <div class="prices__content">
+                            <div class="prices__name">Комплекс маникюр "Все включено + Дизайн"</div>
+                            <div class="prices__prof">Снятие моего покрытия, маникюр, выравнивание ногтевой пластины,
+                                укрепление гелем, дизайн
+                            </div>
+                            <div class="prices__text">1 000 ₽</div>
                         </div>
                     </div>
-                </div>
 
-                <div class="experience__item">
-                    <div class="experience__inner">
-                        <div class="experience__img">
-                            <img src="{% static 'images/experience/2.jpg' %}" alt="">
+                    <div class="prices__item">
+                        <img class="prices__photo" src="{% static 'images/price/2.jpg' %}" alt="">
+                        <div class="prices__content">
+                            <div class="prices__name">Наращивание ногтей "Всё включено + дизайн"</div>
+                            <div class="prices__prof">После Длинны "М", (S, M, L, LL) &ensp;+ 100 р</div>
+                            <div class="prices__text">от 1 400 ₽</div>
                         </div>
                     </div>
-                </div>
 
-                <div class="experience__item">
-                    <div class="experience__inner">
-                        <div class="experience__img">
-                            <img src="{% static 'images/experience/3.jpg' %}" alt="">
+                    <div class="prices__item">
+                        <img class="prices__photo" src="{% static 'images/price/3.jpg' %}" alt="">
+                        <div class="prices__content">
+                            <div class="prices__name">Коррекция</div>
+                            <div class="prices__prof"></div>
+                            <div class="prices__text">1 000 ₽</div>
                         </div>
                     </div>
-                </div>
-                <div class="experience__item">
-                    <div class="experience__inner">
-                        <div class="experience__img">
-                            <img src="{% static 'images/experience/4.jpg' %}" alt="">
+
+                    <div class="prices__item">
+                        <img class="prices__photo" src="{% static 'images/price/4.jpg' %}" alt="">
+                        <div class="prices__content">
+                            <div class="prices__name">Аппаратный маникюр</div>
+                            <div class="prices__prof"></div>
+                            <div class="prices__text">450 ₽</div>
                         </div>
                     </div>
-                </div>
-                <div class="experience__item">
-                    <div class="experience__inner">
-                        <div class="experience__img">
-                            <img src="{% static 'images/experience/5.jpg' %}" alt="">
+
+                    <div class="prices__item">
+                        <img class="prices__photo" src="{% static 'images/price/5.jpg' %}" alt="">
+                        <div class="prices__content">
+                            <div class="prices__name">Донаращивание (ремонт) 1 ногтя</div>
+                            <div class="prices__prof"></div>
+                            <div class="prices__text">50 ₽</div>
                         </div>
                     </div>
-                </div>
-                <div class="experience__item">
-                    <div class="experience__inner">
-                        <div class="experience__img">
-                            <img src="{% static 'images/experience/6.jpg' %}" alt="">
+                    <div class="prices__item">
+                        <img class="prices__photo" src="{% static 'images/price/6.jpg' %}" alt="">
+                        <div class="prices__content">
+                            <div class="prices__name">Снятие чужой работы</div>
+                            <div class="prices__prof"></div>
+                            <div class="prices__text">от 50 ₽ до 150 ₽</div>
                         </div>
                     </div>
-                </div>
-                <div class="experience__item">
-                    <div class="experience__inner">
-                        <div class="experience__img">
-                            <img src="{% static 'images/experience/7.jpg' %}" alt="">
+                    <div class="prices__item">
+                        <img class="prices__photo" src="{% static 'images/price/7.jpg' %}" alt="">
+                        <div class="prices__content">
+                            <div class="prices__name">Снятие моей работы без дальнейшего покрытия</div>
+                            <div class="prices__prof"></div>
+                            <div class="prices__text">250 ₽</div>
                         </div>
                     </div>
-                </div>
-                <div class="experience__item">
-                    <div class="experience__inner">
-                        <div class="experience__img">
-                            <img src="{% static 'images/experience/8.jpg' %}" alt="">
+                    <div class="prices__item">
+                        <img class="prices__photo" src="{% static 'images/price/8.jpg' %}" alt="">
+                        <div class="prices__content">
+                            <div class="prices__name">с новых клиентов предоплата</div>
+                            <div class="prices__prof"></div>
+                            <div class="prices__text">50% от суммы</div>
                         </div>
                     </div>
+
+                </div><!-- /.prices -->
+
+            </div><!-- /.container -->
+        </section>
+
+
+        <!-- Works -->
+        <section class="section section--gray" id="works">
+            <div class="container">
+                <div class="section__header">
+                    <h3 class="section__suptitle">ГАЛЕРЕЯ</h3>
+                    <h2 class="section__title"></h2>
+                    <div class="section__text"></div>
                 </div>
             </div>
 
-        </div><!-- /.container -->
-    </section>
+            <div class="works">
+                <div class="works__col">
+                    <div class="works__item">
+                        <img class="works__image" src="{% static 'images/works/1.jpg' %}" alt="">
+                    </div>
+                    <div class="works__item">
+                        <img class="works__image" src="{% static 'images/works/2.jpg' %}" alt="">
+                    </div>
+                </div>
+
+                <div class="works__col">
+                    <div class="works__item">
+                        <img class="works__image" src="{% static 'images/works/3.jpg' %}" alt="">
+                    </div>
+                    <div class="works__item">
+                        <img class="works__image" src="{% static 'images/works/4.jpg' %}" alt="">
+                    </div>
+                </div>
+
+                <div class="works__col">
+                    <div class="works__item">
+                        <img class="works__image" src="{% static 'images/works/5.jpg' %}" alt="">
+                    </div>
+                    <div class="works__item">
+                        <img class="works__image" src="{% static 'images/works/6.jpg' %}" alt="">
+                    </div>
+                </div>
+
+                <div class="works__col">
+                    <div class="works__item">
+                        <img class="works__image" src="{% static 'images/works/7.jpg' %}" alt="">
+                    </div>
+                    <div class="works__item">
+                        <img class="works__image" src="{% static 'images/works/8.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div><!-- /.works -->
+        </section>
 
 
-    <!-- Footer -->
-    <footer class="footer" id="contacts">
-        <div class="container">
+        <!-- About -->
+        <section class="section section" id="experience">
+            <div class="container">
 
-            <div class="footer__inner">
-                <div class="footer__col  footer__col--first">
-                    <div class="footer__logo">Связь со мной</div>
-                    <div class="footer__text">Если у вас остались какие-то вопросы, то вы можете связаться со мной через месседжеры или социальные сети.</div>
+                <div class="section__header">
+                    <h3 class="section__suptitle">МОЙ ОПЫТ ДЛИННОЙ В 6 ЛЕТ</h3>
+                    <h2 class="section__title"></h2>
+                    <div class="section__text"></div>
+                </div>
 
-                </div><!-- /.footer__col -->
-
-                <div class="footer__col ">
-                    <div class="contacts">
-
-                        <div class="contacts__item">
-                            <img class="contacts__img" src="{% static 'images/messengers/Instagram.png' %}" alt="">
-
-                            <div class="contacts__content">
-                                <a class="contacts__title" href="https://www.instagram.com/manicure_stasya_6.22_vlg/">Instagram</a>
+                <div class="experience">
+                    <div class="experience__item">
+                        <div class="experience__inner">
+                            <div class="experience__img">
+                                <img src="{% static 'images/experience/1.jpg' %}" alt="">
                             </div>
                         </div>
-                        <div class="contacts__item">
-                            <img class="contacts__img" src="{% static 'images/messengers/vkontakte.png' %}" alt="">
+                    </div>
 
-                            <div class="contacts__content">
-                                <a class="contacts__title" href="https://vk.com/public211576625">vkontakte</a>
+                    <div class="experience__item">
+                        <div class="experience__inner">
+                            <div class="experience__img">
+                                <img src="{% static 'images/experience/2.jpg' %}" alt="">
                             </div>
                         </div>
+                    </div>
 
-                    </div><!-- /.contacts -->
+                    <div class="experience__item">
+                        <div class="experience__inner">
+                            <div class="experience__img">
+                                <img src="{% static 'images/experience/3.jpg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience__item">
+                        <div class="experience__inner">
+                            <div class="experience__img">
+                                <img src="{% static 'images/experience/4.jpg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience__item">
+                        <div class="experience__inner">
+                            <div class="experience__img">
+                                <img src="{% static 'images/experience/5.jpg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience__item">
+                        <div class="experience__inner">
+                            <div class="experience__img">
+                                <img src="{% static 'images/experience/6.jpg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience__item">
+                        <div class="experience__inner">
+                            <div class="experience__img">
+                                <img src="{% static 'images/experience/7.jpg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience__item">
+                        <div class="experience__inner">
+                            <div class="experience__img">
+                                <img src="{% static 'images/experience/8.jpg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                     <div class="footer__col ">
-                    <div class="contacts">
+
+            </div><!-- /.container -->
+        </section>
 
 
-                        <div class="contacts__item">
-                            <img class="contacts__img" src="{% static 'images/messengers/Whatsapp.png' %}" alt="">
+        <!-- Footer -->
+        <footer class="footer" id="contacts">
+            <div class="container">
 
-                            <div class="contacts__content">
-                                <a class="contacts__title" href="https://wa.me/79020909703">WhatsApp</a>
-                            </div>
+                <div class="footer__inner">
+                    <div class="footer__col  footer__col--first">
+                        <div class="footer__logo">Связь со мной</div>
+                        <div class="footer__text">Если у вас остались какие-то вопросы, то вы можете связаться со мной
+                            через месседжеры или социальные сети.
                         </div>
-                        <div class="contacts__item">
-                            <img class="contacts__img" src="{% static 'images/messengers/Telegram.png' %}" alt="">
 
-                            <div class="contacts__content">
-                                <a class="contacts__title" href="https://telegram.me/manicure_stasya_622_vlg">Telegram</a>
+                    </div><!-- /.footer__col -->
+
+                    <div class="footer__col ">
+                        <div class="contacts">
+
+                            <div class="contacts__item">
+                                <img class="contacts__img" src="{% static 'images/messengers/Instagram.png' %}" alt="">
+
+                                <div class="contacts__content">
+                                    <a class="contacts__title"
+                                       href="https://www.instagram.com/manicure_stasya_6.22_vlg/">Instagram</a>
+                                </div>
                             </div>
-                        </div>
-                    </div><!-- /.contacts -->
+                            <div class="contacts__item">
+                                <img class="contacts__img" src="{% static 'images/messengers/vkontakte.png' %}" alt="">
+
+                                <div class="contacts__content">
+                                    <a class="contacts__title" href="https://vk.com/public211576625">vkontakte</a>
+                                </div>
+                            </div>
+
+                        </div><!-- /.contacts -->
+                    </div>
+                    <div class="footer__col ">
+                        <div class="contacts">
+
+
+                            <div class="contacts__item">
+                                <img class="contacts__img" src="{% static 'images/messengers/Whatsapp.png' %}" alt="">
+
+                                <div class="contacts__content">
+                                    <a class="contacts__title" href="https://wa.me/79020909703">WhatsApp</a>
+                                </div>
+                            </div>
+                            <div class="contacts__item">
+                                <img class="contacts__img" src="{% static 'images/messengers/Telegram.png' %}" alt="">
+
+                                <div class="contacts__content">
+                                    <a class="contacts__title" href="https://telegram.me/manicure_stasya_622_vlg">Telegram</a>
+                                </div>
+                            </div>
+                        </div><!-- /.contacts -->
+                    </div>
+                </div><!-- /.footer__inner -->
+
+                <div class="copyright">
+                    © 2022 Manicure_Stasya
                 </div>
-            </div><!-- /.footer__inner -->
 
-            <div class="copyright">
-                © 2022 Manicure_Stasya
-            </div>
+            </div><!-- /.container -->
+        </footer>
 
-        </div><!-- /.container -->
-    </footer>
-
-</div><!-- /.page -->
+    </div><!-- /.page -->
 
 {% endblock %}
 
@@ -369,6 +376,65 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="{% static 'js/app.js' %}"></script>
+<script src="{% static 'js/edit_app.js' %}"></script>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+    /* Локализация datepicker */
+    $.datepicker.regional['ru'] = {
+        closeText: 'Закрыть',
+        prevText: 'Предыдущий',
+        nextText: 'Следующий',
+        currentText: 'Сегодня',
+        monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+        monthNamesShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+        dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+        dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
+        dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+        weekHeader: 'Не',
+        dateFormat: 'dd.mm.yy',
+        firstDay: 1,
+        isRTL: false,
+        showMonthAfterYear: false,
+        yearSuffix: ''
+    };
+    $.datepicker.setDefaults($.datepicker.regional['ru']);
+</script>
+<script>
+
+    var holidays = new Array({{plans|length}});
+
+    for (var i = 0; i < holidays.length; i++) {
+        holidays[i] = new Array(3);
+    }
+
+    var i = 0;
+    {% for obj in plans %}
+        holidays[i] = [
+            {{ obj.date.day }},
+            {{ obj.date.month }},
+            {{ obj.date.year }},
+        ]
+        i++;
+    {% endfor %}
+
+    $(function () {
+        $("#datepicker").datepicker({
+            minDate: 0,
+            beforeShowDay: function (date) {
+                for (var i = 0; i < holidays.length; i++) {
+                    if (holidays[i][0] == date.getDate() && holidays[i][1] - 1 == date.getMonth()) {
+                        return [true];
+                    }
+                }
+                return [false];
+            }
+        });
+    });
+</script>
 
 
 </body>
